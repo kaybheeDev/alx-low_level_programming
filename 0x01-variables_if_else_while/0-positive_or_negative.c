@@ -1,6 +1,6 @@
 #include <stdio.h> 
- #include <stdlib.h> 
- #include <time.h> 
+#include <stdlib.h> 
+#include <time.h> 
  /** 
    * main - execution starts and ends with main 
    * Return: main returns 0 if successful 
