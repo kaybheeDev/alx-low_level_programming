@@ -1,6 +1,6 @@
 #include <stdio.h> 
- #include <stdlib.h> 
- #include <time.h> 
+#include <stdlib.h> 
+#include <time.h> 
  /** 
   * main - entry point 
   * Description: prints alphabet in lowercase 
@@ -11,6 +11,8 @@
          char ch = 'a'; 
                  for (ch = 'a'; ch <= 'z'; ch++) 
                  putchar(ch); 
-                 putchar('\n'); 
+                
+	  putchar('\n'); 
+
          return (0); 
  }
