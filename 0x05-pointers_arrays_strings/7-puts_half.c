@@ -20,5 +20,13 @@ for (j = (i / 2); j < i; j++)
 _putchar(str[j]);
 }
 }
+else if (i % 2 != 0)
+{
+n = (i - 1) / 2;
+for (j = n + 1; j < i; j++)
+{
+_putchar(str[j]);
+}
+}
 _putchar('\n');
 }
