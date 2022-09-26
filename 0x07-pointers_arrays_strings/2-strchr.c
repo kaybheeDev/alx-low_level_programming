@@ -4,7 +4,7 @@
  * _strchr - search character
  * @s: string s
  * @c: character to search
- * Return: return at first doscovery
+ * Return: return at first discovery
  */
 
 char *_strchr(char *s, char c)
