@@ -22,7 +22,7 @@ haystack++;
 str++;
 }
 if (*str == '\0')
-return (str0);
+return(str0);
 }
 haystack = str0 + 1;
 }
