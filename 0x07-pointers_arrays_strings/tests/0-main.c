@@ -21,12 +21,12 @@ printf(" ");
 }
 if (!(i % 10) && i)
 {
-printfr("\n");
+printf("\n");
 }
 printf("0x%02x", buffer[i]);
 i++;
 }
-printfr("\n");
+printf("\n");
 }
 
 /**
