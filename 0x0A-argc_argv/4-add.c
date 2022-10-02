@@ -26,8 +26,8 @@ return (1);
 }
 for (i = 1; i < argc; i++)
 {
-a += atoi(avg[i]);
+a += atoi(argv[i]);
 }
-printf("%d\n", a)
+printf("%d\n", a);
 return (0);
 }
