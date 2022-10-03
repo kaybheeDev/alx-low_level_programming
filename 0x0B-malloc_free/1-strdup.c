@@ -26,6 +26,8 @@ if (duplicate == NULL)
 return (NULL);
 
 for (index = 0; str[index]; index++)
+duplicate[index] = str[index]
+
 duplicate[len] = '\0';
 
 return (duplicate);
