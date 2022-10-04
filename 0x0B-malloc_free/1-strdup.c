@@ -30,7 +30,7 @@ int j;
 
 for (j = 0; st2[j] != '\0'; j++)
 st1[j] = *(st2 + j);
-st1[j] ='\0';
+st1[j] = '\0';
 return (st1);
 }
 
