@@ -1,34 +1,59 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
- * _strdup - Returns a pointer to a newly-allocated space in memory
- * containing a copy of the string given as parameter
- * @str: the string to be copied
- *
- * Return: if str == NULL or insufficient memory is available - NULL
- * otherwise - a pointer to the duplicated string
+ * _strlen - Calc str length
+ * @s: string
+ * Return: integer
  */
+
+int _strlen(char *s)
+{
+int i;
+
+for (i = 0; s[i] != '\0'; i++)
+{
+}
+
+return (i);
+}
+
+/**
+ *_strcpy - str copy
+ * @st1: string 1
+ * @st2: string 2
+ * Return: string
+ */
+
+char *_strcpy(char *st1, char *st2)
+{
+int j;
+
+for (j = 0; st2[j] != '\0'; j++)
+st1[j] = *(st2 + j);
+st1[j] ='\0';
+return (st1);
+}
+
+/**
+ * _strdup - create memory and copy strings
+ * @str: string to copy
+ * Return: return a pointer to duplicated str
+ */
+
 char *_strdup(char *str)
 {
-char *duplicate;
-int index, len = 0;
+unsigned int size;
+char *st3;
 
-if (str == NULL)
+if (str == 0)
+return (NULL);
+size = _strlen(str) + 1;
+ifr (size == 0)
 return (NULL);
 
-for (index = 0; str[index]; index++)
-len++;
-
-duplicate = malloc(sizeof(char) * (len + 1));
-
-if (duplicate == NULL)
+st3 = (char *) malloc(sizeof(char) * size);
+if (st3 == 0)
 return (NULL);
-
-for (index = 0; str[index]; index++)
-duplicate[index] = str[index]
-
-duplicate[len] = '\0';
-
-return (duplicate);
+_strcpy(st3, str);
+return (st3);
 }
