@@ -1,59 +1,68 @@
 #include "main.h"
-
 /**
- * _strlen - Calc str length
- * @s: string
- * Return: integer
+ * _strlen - count array
+ * @s: array of elements
+ * Return: 1
  */
 
 int _strlen(char *s)
 {
-int i;
+unsigned int i;
 
-for (i = 0; s[i] != '\0'; i++)
+i = 0;
+while (s[i] != '\0')
 {
+i++;
 }
 
 return (i);
 }
 
 /**
- *_strcpy - str copy
- * @st1: string 1
- * @st2: string 2
- * Return: string
+ * _strcpy - copy arrays
+ * @src: array of elements
+ * @dest: dest array
+ * Return: dest
  */
 
-char *_strcpy(char *st1, char *st2)
+char *_strcpy(char *dest, char *src)
 {
-int j;
+int i = 0;
 
-for (j = 0; st2[j] != '\0'; j++)
-st1[j] = *(st2 + j);
-st1[j] = '\0';
-return (st1);
+while (src[i] != '\0')
+{
+dest[i] = src[i];
+i++;
+}
+dest[i] = '\0';
+
+return (dest);
 }
 
 /**
- * _strdup - create memory and copy strings
- * @str: string to copy
- * Return: return a pointer to duplicated str
+ * _strdup - array for printing a string
+ * @str: array of elements
+ * Return: pointer
  */
 
-char *_strdup(char *str)
+char  *_strdup(char *str)
 {
+char *dst;
 unsigned int size;
-char *st3;
 
 if (str == 0)
+{
 return (NULL);
-size = _strlen(str) + 1;
-ifr (size == 0)
-return (NULL);
+}
 
-st3 = (char *) malloc(sizeof(char) * size);
-if (st3 == 0)
+size = _strlen(str) + 1;
+
+dst = (char *) malloc(size *sizeof(char));
+
+if (dst == 0)
+{
 return (NULL);
-_strcpy(st3, str);
-return (st3);
+}
+_strcpy(dst, str);
+return (dst);
 }
