@@ -22,7 +22,6 @@ return (i);
  * str_concat - back a pointer to array
  * @s1: Array one
  * @s2: Array two
-
  * Return: always an array dynamic
  */
 
