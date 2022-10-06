@@ -19,12 +19,12 @@ return (s);
 }
 
 /**
- * _callpc - allocates memory gor an array using malloc
+ * _calloc - allocates memory gor an array using malloc
  * @nmemb: n elements
  * @size: bytes
  * Return: pointer
  */
-void *_calloc(unsigned int nmemb, unsignef int size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 void *p;
 
