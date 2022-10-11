@@ -34,8 +34,7 @@ free(doge);
 return (NULL);
 }
 for (k = 0; k <= i; k++)
-doge->name
-[k] = name[k];
+doge->name[k] = name[k];
 doge->age = age;
 doge->owner = malloc(j *sizeof(doge->owner));
 if (doge->owner == NULL)
@@ -46,8 +45,7 @@ free(doge);
 return (NULL);
 }
 for (k = 0; k <= j; k++)
-doge->owner
-[k] = owner[k];
+doge->owner[k] = owner[k];
 return (dodge);
 }
 
