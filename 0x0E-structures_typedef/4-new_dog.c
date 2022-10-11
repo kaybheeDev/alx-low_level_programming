@@ -7,7 +7,7 @@
  * @name: name's dog
  * @age: age's dog
  * @owner: owner's dog
- * Return: newdogc
+ * Return: newdog
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
@@ -46,6 +46,6 @@ return (NULL);
 }
 for (k = 0; k <= j; k++)
 doge->owner[k] = owner[k];
-return (dodge);
+return (doge);
 }
 
