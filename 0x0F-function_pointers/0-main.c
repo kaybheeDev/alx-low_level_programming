@@ -4,6 +4,7 @@
 /**
  * print_name_as_is - prints a name as it is
  * @name: name of the person
+ *
  * Return: Nothing
  */
 void print_name_as_is(char *name)
@@ -14,6 +15,7 @@ printf("Hello, my name is %s\n", name);
 /**
  * print_name_uppercase - prints a name in upper case
  * @name: name of the person
+ *
  * Return: Nothing
  */
 void print_name_uppercase(char *name)
@@ -39,6 +41,7 @@ i++;
 /**
  * main - check the code
  * Return: always 0
+ *
  */
 int main(void)
 {
