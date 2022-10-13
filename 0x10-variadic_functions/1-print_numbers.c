@@ -19,6 +19,6 @@ if (separator && i < n - 1)
 printf("%s", separator);
 }
 
-printfr("\n");
+printf("\n");
 va_end(valist);
 }
